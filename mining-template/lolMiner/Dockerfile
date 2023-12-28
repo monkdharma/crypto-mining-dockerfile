@@ -3,9 +3,11 @@ FROM ${BASE_IMAGE}
 WORKDIR /workspace
 ENV TZ=Asia/Shanghai
 ENV DEBIAN_FRONTEND=noninteractive
-ENV ALGORITHM=KARLSEN
-ENV POOL=us.karlsen.herominers.com:1195
-ENV WALLET=karlsen:qpk6uzs753emhnue24pq0af30tfafypx7thyrgwmvtdfpjvf2uv32t7vxhrnl
+ENV MINING="lolminer"
+ENV ALGORITHM=
+ENV POOL=
+ENV WALLET=
+ENV OTHER_ARGS=
 
 RUN apt update && apt install wget -y && \
     wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.81/lolMiner_v1.81_Lin64.tar.gz && \ 
